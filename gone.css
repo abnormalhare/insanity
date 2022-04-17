@@ -6,6 +6,10 @@ body {
 div {
   display: inline;
 }
+ul {
+  list-style-type: none;
+}
+
 .red {
   color: #FF0000;
 }
