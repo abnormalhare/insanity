@@ -10,6 +10,17 @@ ul {
   list-style-type: none;
 }
 
+a:link {
+  color: purple;
+}
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: hotpink;
+}
+
 .red {
   color: #FF0000;
 }
