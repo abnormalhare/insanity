@@ -16,8 +16,10 @@ a:link {
 a:visited {
   color: purple;
 }
-
 a:hover {
+  color: hotpink;
+}
+a:active {
   color: hotpink;
 }
 
