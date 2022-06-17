@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Drive</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <p id="blink">:>█</p>
+    </body>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function blink() {
+            document.getElementById("blink").innerHTML = ":>"
+            await sleep(1000)
+            document.getElementById("blink").innerHTML = ":>█"
+            await sleep(1000)
+            blink()
+        }
+
+        blink()
+    </script>
+</html>
