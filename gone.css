@@ -1,31 +1,31 @@
-body {
+.bodyBefore {
   font-family: sans-serif;
   color: white;
   background-color: black;
 }
-div {
+.divBefore {
   display: inline;
 }
-ul {
+.ulBefore {
   list-style-type: none;
 }
-a {
+.aBefore {
   text-decoration: none;
 }
-a:link {
+.aBefore:link {
   color: purple;
 }
-a:visited {
+.aBefore:visited {
   color: purple;
 }
 
-h3 {
+.h3Before {
   text-align: center;
 }
 
-.red {
+.redBefore {
   color: #FF0000;
 }
-.blue {
+.blueBefore {
   color: #00FFFF;
 }
