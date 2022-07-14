@@ -3,9 +3,7 @@
   color: white;
   background-color: black;
 }
-.divBefore {
-  display: inline;
-}
+
 .ulBefore {
   list-style-type: none;
 }
@@ -25,7 +23,9 @@
 
 .redBefore {
   color: #FF0000;
+  display: inline;
 }
 .blueBefore {
   color: #00FFFF;
+  display: inline;
 }
