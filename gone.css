@@ -4,6 +4,11 @@
   background-color: black;
 }
 
+body {
+  text-align: center;
+  background-color: black;
+}
+
 .ulBefore {
   list-style-type: none;
 }
