@@ -1,1 +1,27 @@
 
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Storage Access</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <p id="blink">:>█</p>
+        <p>Directory:</p>
+    </body>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function blink() {
+            document.getElementById("blink").innerHTML = ":>"
+            await sleep(700)
+            document.getElementById("blink").innerHTML = ":>█"
+            await sleep(700)
+            blink()
+        }
+
+        blink()
+    </script>
+</html>
