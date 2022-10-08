@@ -3,7 +3,7 @@ const check_text = (text) => {
     console.log(split, split[0])
     switch (split[0]) {
         case "color":
-            body.style.backgroundColor = split[1]
+            document.body.style.backgroundColor = split[1]
             break
         case "quit":
             window.close()
@@ -27,4 +27,4 @@ const check_input = (event) => {
     }
 }
 
-document.getElementById("text").focus()
+document.input.focus()
