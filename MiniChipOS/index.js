@@ -18,6 +18,7 @@ const check_text = (text) => {
     let split = text.innerHTML.split(" ")
     switch (split[0]) {
         case "color":
+            console.log("this works")
             text.style = "background-color: " + split[1]
             break
         case "quit":
