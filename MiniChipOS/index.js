@@ -13,7 +13,7 @@ const check_text = (text) => {
 const command_check = () => {
     let text = document.getElementById("text")
 
-    check_text(text)
+    check_text(text.innerHTML)
     console.log("test")
 
     window.requestAnimationFrame
