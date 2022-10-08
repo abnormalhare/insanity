@@ -14,6 +14,7 @@ const command_check = () => {
     let text = document.getElementById("text")
 
     check_text(text)
+    console.log("test")
 
     window.requestAnimationFrame
 }
