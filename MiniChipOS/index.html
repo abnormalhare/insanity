@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <p id="blink">:>█</p>
+        <p>:><input id="text"></div><div id="blink">█</div></p>
         <p>Directory:</p>
     </body>
     <script>
@@ -15,9 +15,9 @@
             return new Promise(resolve => setTimeout(resolve, ms));
         }
         async function blink() {
-            document.getElementById("blink").innerHTML.replace(":>█", ":>")
+            document.getElementById("blink").innerHTML = ""
             await sleep(700)
-            document.getElementById("blink").innerHTML.replace(":>", ":>█")
+            document.getElementById("blink").innerHTML = "█"
             await sleep(700)
             blink()
         }
