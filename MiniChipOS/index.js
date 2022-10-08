@@ -27,10 +27,8 @@ const check_text = (text) => {
 
     switch (split[0]) {
         case "color":
-            
             determineColor(split[1])
             document.body.style.backgroundColor = split[1]
-
             break
         case "quit":
             window.close()
