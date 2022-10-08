@@ -3,7 +3,7 @@ const check_text = (text) => {
     console.log(split, split[0])
     switch (split[0]) {
         case "color":
-            text.style = "background-color: " + split[1]
+            body.style.backgroundColor = split[1]
             break
         case "quit":
             window.close()
