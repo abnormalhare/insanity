@@ -14,7 +14,7 @@ const determineColor = (value) => {
             }
         }
     }
-    if (value[0] > 8 && value[1] > 8 && value[2] > 8) {
+    if (value[1] > 8 && value[2] > 8 && value[3] > 8) {
         document.body.style.color = "black"
     } else {
         document.body.style.color = "white"
