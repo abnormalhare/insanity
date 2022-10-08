@@ -12,8 +12,17 @@ const check_text = (text) => {
 
 const command_check = () => {
     let text = document.getElementById("text")
-    
+
     check_text(text)
+
+    window.requestAnimationFrame
 }
 
-window.requestAnimationFrame(command_check)
+const check_input = (event) => {
+    switch (event.keyCode) {
+        case 13:
+            command_check()
+    }
+}
+
+document.getElementById("text").focus()
