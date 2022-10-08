@@ -15,10 +15,10 @@ function intToRGB(i){
 }
 
 const check_text = (text) => {
-    let split = text.split(" ")
+    let split = text.innerHTML.split(" ")
     switch (split[0]) {
         case "color":
-            intToRGB(hashCode(your_string))
+            text.style = "background-color: " + split[1]
             break
         case "quit":
             window.close()
@@ -29,7 +29,7 @@ const check_text = (text) => {
 const command_check = () => {
     let text = document.getElementById("text")
 
-    check_text(text.innerHTML)
+    check_text(text)
     console.log("test")
 
     window.requestAnimationFrame
