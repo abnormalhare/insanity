@@ -1,5 +1,5 @@
 const check_text = (text) => {
-    let split = text.innerHTML.split(" ")
+    let split = text.value.split(" ")
     console.log(split, split[0])
     switch (split[0]) {
         case "color":
