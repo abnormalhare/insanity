@@ -12,6 +12,10 @@ const determineColor = (value) => {
     document.body.style.backgroundColor = value
 }
 
+const cd = (value) => {
+
+}
+
 const check_text = (text) => {
     let split = text.value.split(" ")
     text.value = ""
@@ -19,6 +23,8 @@ const check_text = (text) => {
         case "color":
             determineColor(split[1])
             break
+        case "cd":
+            cd(split[1])
         case "quit":
             document.body.innerHTML = ""
             break
@@ -39,3 +45,5 @@ const check_input = (event) => {
 }
 
 document.getElementById("text").focus()
+
+document.getElementById("dirText").innerHTML = "TIME\nTEST"
