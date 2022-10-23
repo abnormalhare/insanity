@@ -14,7 +14,7 @@ const determineColor = (value) => {
 
 const check_text = (text) => {
     let split = text.value.split(" ")
-
+    text.value = ""
     switch (split[0]) {
         case "color":
             determineColor(split[1])
@@ -29,10 +29,6 @@ const command_check = () => {
     let text = document.getElementById("text")
 
     check_text(text)
-
-    text.value = ""
-
-    window.requestAnimationFrame
 }
 
 const check_input = (event) => {
