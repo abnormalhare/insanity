@@ -2,6 +2,7 @@ const determineColor = (value) => {
     let out = value.replace("#", "")
     try {
         out = Number(out)
+        console.log("good")
         if (out.toString().length < 4 && out < 555) {
             document.body.style.color = white
         } else if (out.toString().length > 4 && out < 555555) {
@@ -9,6 +10,7 @@ const determineColor = (value) => {
         } else {
             document.body.style.color = black
         }
+        console.log("good")
     } catch (e) {
         if (out == "black" || out.search("dark") != -1) {
             document.body.style.color = white
