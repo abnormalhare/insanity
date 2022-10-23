@@ -2,15 +2,15 @@ const determineColor = (value) => {
     let out = value.replace("#", "")
     try {
         out = +out
-        if (out.toString().length < 4 and out < 555) {
+        if (out.toString().length < 4 && out < 555) {
             document.body.style.color = white
-        } else if (out.toString().length > 4 and out < 555555) {
+        } else if (out.toString().length > 4 && out < 555555) {
             document.body.style.color = white
         } else {
             document.body.style.color = black
         }
     } catch (e) {
-        if (out == "black" or out.search("dark") != -1) {
+        if (out == "black" || out.search("dark") != -1) {
             document.body.style.color = white
         } else {
             document.body.style.color = black
