@@ -1,5 +1,5 @@
 const determineColor = (value) => {
-    if (value.indexOf("#") == -1) {
+    if (value.indexOf("#") != -1) {
         return
     }
     if (value == "black" || value.indexOf("dark") != -1) {
