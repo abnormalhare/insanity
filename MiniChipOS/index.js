@@ -1,24 +1,21 @@
 const determineColor = (value) => {
-    const hex = [["a", "b", "c", "d", "e", "f"], [10, 11, 12, 13, 14, 15]]
-    let hex6 = false
-    value = value.split("")
-    if (value.length == 7) { value.remove(2);value.remove(4);value.remove(6) }
-    for (let i = 1; i < 3; i++) {
-        try {
-            value[i] = parseInt(value[i])
-        } catch {
-            for (let j = 0; j < 6; j++) {
-                if (value[i] == hex[0][j]) {
-                    value[i] = hex[1][j]
-                }
-            }
+    let out = value.replace("#", "")
+    try:
+        out = +out
+        if (out.toString().length < 4 and out < 555) {
+            document.body.style.color = white
+        } else if (out.toString().length > 4 and out < 555555) {
+            document.body.style.color = white
+        } else {
+            document.body.style.color = black
         }
-    }
-    if (value[1] > 8 && value[2] > 8 && value[3] > 8) {
-        document.body.style.color = "black"
-    } else {
-        document.body.style.color = "white"
-    }
+    catch (e):
+        if (out == "black" or out.search("dark") != -1) {
+            document.body.style.color = white
+        } else {
+            document.body.style.color = black
+        }
+    document.body.style.backgroundColor = out
     
 }
 
@@ -28,7 +25,6 @@ const check_text = (text) => {
     switch (split[0]) {
         case "color":
             determineColor(split[1])
-            document.body.style.backgroundColor = split[1]
             break
         case "quit":
             window.close()
