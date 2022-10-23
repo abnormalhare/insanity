@@ -1,8 +1,13 @@
 const determineColor = (value) => {
+    if (value.indexOf("#") == -1) {
+        return
+    }
     if (value == "black" || value.indexOf("dark") != -1) {
         document.body.style.color = "white"
+        document.getElementById("text").style.color = "white"
     } else {
         document.body.style.color = "black"
+        document.getElementById("text").style.color = "black"
     }
     document.body.style.backgroundColor = value
 }
