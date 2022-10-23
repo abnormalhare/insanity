@@ -4,18 +4,18 @@ const determineColor = (value) => {
         out2 = Number(out)
         console.log(out)
         if (out.length < 4 && out2 < 555) {
-            document.body.style.color = white
+            document.body.style.color = "white"
         } else if (out.length > 4 && out2 < 555555) {
-            document.body.style.color = white
+            document.body.style.color = "white"
         } else {
-            document.body.style.color = black
+            document.body.style.color = "black"
         }
         console.log("good")
     } catch (e) {
-        if (out == "black" || out.search("dark") != -1) {
-            document.body.style.color = white
+        if (out == "black" || out.indexOf("dark") != -1) {
+            document.body.style.color = "white"
         } else {
-            document.body.style.color = black
+            document.body.style.color = "black"
         }
     }
     document.body.style.backgroundColor = out
