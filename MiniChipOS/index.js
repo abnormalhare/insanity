@@ -38,4 +38,4 @@ const check_input = (event) => {
     }
 }
 
-document.input.focus()
+document.getElementById("text").focus()
