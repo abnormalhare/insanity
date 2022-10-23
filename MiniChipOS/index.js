@@ -1,6 +1,6 @@
 const determineColor = (value) => {
     let out = value.replace("#", "")
-    try:
+    try {
         out = +out
         if (out.toString().length < 4 and out < 555) {
             document.body.style.color = white
@@ -9,12 +9,13 @@ const determineColor = (value) => {
         } else {
             document.body.style.color = black
         }
-    catch (e):
+    } catch (e) {
         if (out == "black" or out.search("dark") != -1) {
             document.body.style.color = white
         } else {
             document.body.style.color = black
         }
+    }
     document.body.style.backgroundColor = out
     
 }
