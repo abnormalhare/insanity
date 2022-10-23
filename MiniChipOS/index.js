@@ -1,11 +1,11 @@
 const determineColor = (value) => {
     let out = value.replace("#", "")
     try {
-        out = Number(out)
+        out2 = Number(out)
         console.log(out)
-        if (out.toString().length < 4 && out < 555) {
+        if (out.length < 4 && out2 < 555) {
             document.body.style.color = white
-        } else if (out.toString().length > 4 && out < 555555) {
+        } else if (out.length > 4 && out2 < 555555) {
             document.body.style.color = white
         } else {
             document.body.style.color = black
