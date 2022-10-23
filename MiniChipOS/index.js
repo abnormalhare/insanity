@@ -1,7 +1,7 @@
 const determineColor = (value) => {
     let out = value.replace("#", "")
     try {
-        out = +out
+        out = Number(out)
         if (out.toString().length < 4 && out < 555) {
             document.body.style.color = white
         } else if (out.toString().length > 4 && out < 555555) {
