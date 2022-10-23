@@ -9,7 +9,7 @@ const determineColor = (value) => {
         } else {
             document.body.style.color = "black"
         }
-        document.body.style.backgroundColor = out2
+        document.body.style.backgroundColor = "#" + out2
     } catch (e) {
         if (out == "black" || out.indexOf("dark") != -1) {
             document.body.style.color = "white"
