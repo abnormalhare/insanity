@@ -46,4 +46,7 @@ const check_input = (event) => {
 
 document.getElementById("text").focus()
 
-document.getElementById("dirText").innerHTML = "TIME\nTEST"
+document.getElementById("dirText").innerHTML = `
+TIME<br>
+TEST
+`
