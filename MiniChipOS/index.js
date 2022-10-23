@@ -2,7 +2,6 @@ const determineColor = (value) => {
     let out = value.replace("#", "")
     try {
         out2 = Number(out)
-        console.log(out)
         if (out.length < 4 && out2 < 555) {
             document.body.style.color = "white"
         } else if (out.length > 4 && out2 < 555555) {
@@ -10,15 +9,15 @@ const determineColor = (value) => {
         } else {
             document.body.style.color = "black"
         }
-        console.log("good")
+        document.body.style.backgroundColor = out
     } catch (e) {
         if (out == "black" || out.indexOf("dark") != -1) {
             document.body.style.color = "white"
         } else {
             document.body.style.color = "black"
         }
+        document.body.style.backgroundColor = out
     }
-    document.body.style.backgroundColor = out
     
 }
 
@@ -39,7 +38,6 @@ const command_check = () => {
     let text = document.getElementById("text")
 
     check_text(text)
-    console.log("test")
 
     text.value = ""
 
