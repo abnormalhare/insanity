@@ -9,16 +9,16 @@ const determineColor = (value) => {
         } else {
             document.body.style.color = "black"
         }
-        document.body.style.backgroundColor = "#" + out2
+        out = "#" + out2
+        console.log(out)
     } catch (e) {
         if (out == "black" || out.indexOf("dark") != -1) {
             document.body.style.color = "white"
         } else {
             document.body.style.color = "black"
         }
-        document.body.style.backgroundColor = out
     }
-    
+    document.body.style.backgroundColor = out
 }
 
 const check_text = (text) => {
@@ -29,7 +29,7 @@ const check_text = (text) => {
             determineColor(split[1])
             break
         case "quit":
-            window.close()
+            document.body.innerHTML = ""
             break
     }
 }
