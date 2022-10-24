@@ -14,9 +14,9 @@ const determineColor = (value) => {
 
 const cd = (value) => {
     for (let i in currentDir) {
-        console.log(i, i.name_)
-        if (value == i.name_.toUpperCase()) {
-            currentDirName.concat(i.name_)
+        inside = currentDir[i]
+        if (value == inside.name_.toUpperCase()) {
+            currentDirName.concat(inside.name_)
         }
     }
 }
@@ -67,12 +67,9 @@ let currentDirName = directory.NUL.name_
 
 document.getElementById("text").focus()
 
-document.getElementById("dirText").innerHTML = `
-COMPUTER<br>
-DOCUMENTS<br>
-DOWNLOADS<br>
-GAMES<br>
-PICTURES<br>
-LANGUAGES<br>
-TIME<br>
-`
+dirList = []
+for (let i in currentDir) {
+    dirList.push(currentDir[i].name_)
+}
+
+document.getElementById("dirText").innerHTML = dirList
