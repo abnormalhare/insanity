@@ -24,3 +24,12 @@ while (sectionList[chapter].type != "chapter") {
 chapCurr.innerHTML = sectionList[chapter].chapter
 typeCurr.innerHTML = ""+sectionList[section].type
 areaCurr.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
+
+section += 1;
+if (sectionList[chapter].type == "chapter") {
+    chapter = section;
+    section += 1;
+}
+chapNext.innerHTML = sectionList[chapter].chapter
+typeNext.innerHTML = ""+sectionList[section].type
+areaNext.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
