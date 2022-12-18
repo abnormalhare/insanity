@@ -8,7 +8,7 @@ const sectionList = [
     {type: "mpbian", end: 704}
 ]
 
-const section = 1
+let section = 1
 const chapCurr = document.getElementById("CC")
 const typeCurr = document.getElementById("TC")
 const areaCurr = document.getElementById("AC")
