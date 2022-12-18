@@ -18,17 +18,17 @@ const areaNext = document.getElementById("AN")
 
 let chapter = section;
 while (sectionList[chapter].type != "chapter") {
-    chapter -= 1;
+    chapter--;
 }
 
 chapCurr.innerHTML = sectionList[chapter].chapter
 typeCurr.innerHTML = ""+sectionList[section].type
 areaCurr.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
 
-section += 1;
+section++;
 if (sectionList[chapter].type == "chapter") {
     chapter = section;
-    section += 1;
+    section++;
 }
 chapNext.innerHTML = sectionList[chapter].chapter
 typeNext.innerHTML = ""+sectionList[section].type
