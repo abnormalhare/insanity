@@ -7,7 +7,9 @@ const sectionList = [
     {type: "mpan", end: 697},
     {type: "mpbian", end: 704},
     {type: "adant", end: 780},
-    {type: "simp", end: 832}
+    {type: "simp", end: 832},
+    {type: "pm", end: 838},
+    {type: "misc.", end: 864}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
 let section = 2
@@ -24,15 +26,19 @@ while (sectionList[chapter].type != "chapter") {
     chapter--;
 }
 
-chapCurr.innerHTML = sectionList[chapter].chapter
-typeCurr.innerHTML = ""+sectionList[section].type
-areaCurr.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
+const setDisplay = (chap, type, area) => {
+    chap.innerHTML = sectionList[chapter].chapter
+    type.innerHTML = sectionList[section].type
+    area.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
+    if (type.innerHTML == "misc.") {
+        type.innerHTML.italics()
+    }
+}
 
+setDisplay(chapCurr, typeCurr, areaCurr)
 section++;
 if (sectionList[section].type == "chapter") {
     chapter = section;
     section++;
 }
-chapNext.innerHTML = sectionList[chapter].chapter
-typeNext.innerHTML = ""+sectionList[section].type
-areaNext.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
+setDisplay(chapNext, typeNext, areaNext)
