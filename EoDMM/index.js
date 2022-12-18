@@ -5,7 +5,9 @@ const sectionList = [
     {type: "anand", end: 669},
     {type: "sylan", end: 677},
     {type: "mpan", end: 697},
-    {type: "mpbian", end: 704}
+    {type: "mpbian", end: 704},
+    {type: "adant", end: 780},
+    {type: "simp", end: 832}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
 let section = 2
