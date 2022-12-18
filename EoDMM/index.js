@@ -17,8 +17,8 @@ const typeNext = document.getElementById("TN")
 const areaNext = document.getElementById("AN")
 
 let chapter = section;
-while (sectionList[chapter].chapter != undefined) {
-    chapter -= 1
+while (sectionList[chapter].type != "chapter") {
+    chapter -= 1;
 }
 
 chapCurr.innerHTML = sectionList[chapter].chapter
