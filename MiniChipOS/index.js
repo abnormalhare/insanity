@@ -15,6 +15,7 @@ const determineColor = (value) => {
 const cd = (value) => {
     for (let i in currentDir) {
         inside = currentDir[i]
+        console.log(inside)
         if (value == inside.name_.toUpperCase()) {
             currentDirName.concat(inside.name_)
         }
