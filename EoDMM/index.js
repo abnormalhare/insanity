@@ -26,7 +26,7 @@ typeCurr.innerHTML = ""+sectionList[section].type
 areaCurr.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
 
 section++;
-if (sectionList[chapter].type == "chapter") {
+if (sectionList[section].type == "chapter") {
     chapter = section;
     section++;
 }
