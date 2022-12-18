@@ -7,8 +7,9 @@ const sectionList = [
     {type: "mpan", end: 697},
     {type: "mpbian", end: 704}
 ]
-
-let section = 1
+///// USE FOR UPDATING TO NEXT SECTION /////
+let section = 2
+/////         VERY IMPORTANT           /////
 const chapCurr = document.getElementById("CC")
 const typeCurr = document.getElementById("TC")
 const areaCurr = document.getElementById("AC")
