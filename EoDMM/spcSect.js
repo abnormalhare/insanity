@@ -2,8 +2,10 @@ const amountSPC = {
     start: 1,
     chapters: [2, 2, 4, 104, 84, 187, 490]
 }
+let locationG = 0
 const setPercentage = (block) => {
     let locationSPC = 690
+    locationG = locationSPC
     let indexSPC = 0
     let i = amountSPC.chapters[indexSPC]
     while (indexSPC < parseInt(block.id)) {
@@ -28,3 +30,4 @@ const setPercentage = (block) => {
         block.innerHTML = percentage + "%+";
     }
 }
+const position = () => { document.getElementById("LUP").innerHTML = locationG }
