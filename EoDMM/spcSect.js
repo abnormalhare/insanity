@@ -3,7 +3,7 @@ const amountSPC = {
     chapters: [2, 2, 4, 104, 84, 187, 490]
 }
 const setPercentage = (block) => {
-    let locationSPC = 672
+    let locationSPC = 677
     let indexSPC = 0
     let i = amountSPC.chapters[indexSPC]
     while (indexSPC < parseInt(block.id)) {
