@@ -34,3 +34,15 @@ body {
   color: #00cc00;
   display: inline;
 }
+
+@keyframes rainbow {
+  0% { color: red; }
+  20% { color: orange; }
+  40% { color: yellow; }
+  60% { color: green; }
+  80% { color: blue; }
+  100% { color: violet; }
+}
+.rainbowBefore {
+  animation: rainbow 5s linear infinite;
+}
