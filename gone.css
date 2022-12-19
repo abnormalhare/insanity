@@ -52,3 +52,11 @@ body {
   animation: rainbow 5s linear infinite;
   display: inline;
 }
+
+.semicircle {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: purple;
+  transform: translateY(50%);
+}
