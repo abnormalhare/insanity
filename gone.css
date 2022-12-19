@@ -58,5 +58,6 @@ body {
   height: 50%;
   border-radius: 50%;
   background-color: purple;
+  background: linear-gradient(to top, rgba(128, 0, 128, 1), transparent);
   transform: translateY(50%);
 }
