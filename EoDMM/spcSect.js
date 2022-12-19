@@ -17,6 +17,6 @@ const setPercentage = (block) => {
         block.innerHTML = "100%";
     } else {
         block.className = "yellowBefore";
-        block.innerHTML = locationSPC / amountSPC.chapters[indexSPC] + "%"
+        block.innerHTML = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10 + "%"
     }
 }
