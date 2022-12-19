@@ -5,9 +5,8 @@ const amountSPC = {
 let locationSPC = 670
 const setPercentage = (block) => {
     let indexSPC = 0
-    console.log("LOCATION:", locationSPC, "INDEX:", indexSPC)
     let i = amountSPC.chapters[indexSPC]
-    while (locationSPC - i >= 0 && indexSPC < parseInt(block.id)) {
+    while (indexSPC < parseInt(block.id)) {
         locationSPC -= i;
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
