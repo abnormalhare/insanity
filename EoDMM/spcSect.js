@@ -4,7 +4,7 @@ const amountSPC = {
 }
 let locationG = 0
 const setPercentage = (block) => {
-    let locationSPC = 690
+    let locationSPC = 697
     locationG = locationSPC
     let indexSPC = 0
     let i = amountSPC.chapters[indexSPC]
