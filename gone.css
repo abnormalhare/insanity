@@ -19,19 +19,23 @@ body {
 }
 
 .redBefore {
-  color: #FF0000;
+  color: #F00;
   display: inline;
 }
 .blueBefore {
-  color: #00FFFF;
+  color: #0FF;
   display: inline;
 }
 .yellowBefore {
-  color: #cccc00;
+  color: #cc0;
+  display: inline;
+}
+.ygBefore {
+  color: #7d0;
   display: inline;
 }
 .greenBefore {
-  color: #00cc00;
+  color: #0c0;
   display: inline;
 }
 
