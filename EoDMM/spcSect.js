@@ -3,11 +3,22 @@ const amountSPC = {
     chapters: [2, 2, 4, 104, 84, 187, 490]
 }
 let locationSPC = 670
-let indexSPC = 0
-let i = amountSPC.chapters[indexSPC]
-while (locationSPC - i > 0) {
-    locationSPC -= i;
-    indexSPC++;
-    i = amountSPC.chapters[indexSPC];
+let indexLimit = 1
+const setPercentage = (block) => {
+    let indexSPC = 0
+    let i = amountSPC.chapters[indexSPC]
+    while (locationSPC - i >= 0 && indexSPC < indexLimit) {
+        locationSPC -= i;
+        indexSPC++;
+        i = amountSPC.chapters[indexSPC];
+    }
+    if (locationSPC >= 0) {
+        block.class = "greenBefore";
+        block.innerHTML = "100%";
+    } else {
+        block.class = "yellowBefore";
+        block.innerHTML = locationSPC / amountSPC.chapters[indexSPC]
+    }
+
+    indexLimit++;
 }
-console.log(locationSPC)
