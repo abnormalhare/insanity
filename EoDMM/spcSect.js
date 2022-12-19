@@ -12,6 +12,7 @@ const setPercentage = (block) => {
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
+    console.log("LOCATION:", locationSPC, "INDEX:", indexSPC)
     if (locationSPC >= 0) {
         block.class = "greenBefore";
         block.innerHTML = "100%";
