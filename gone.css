@@ -37,11 +37,12 @@ body {
 
 @keyframes rainbow {
   0% { color: red; }
-  20% { color: orange; }
-  40% { color: yellow; }
-  60% { color: green; }
-  80% { color: blue; }
-  100% { color: violet; }
+  16% { color: orange; }
+  33% { color: yellow; }
+  50% { color: green; }
+  66% { color: blue; }
+  83% { color: violet; }
+  100% { color: red; }
 }
 .rainbowBefore {
   animation: rainbow 5s linear infinite;
