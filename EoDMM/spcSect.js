@@ -11,11 +11,20 @@ const setPercentage = (block) => {
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
-    if (locationSPC >= amountSPC.chapters[indexSPC]) {
+    let percentage = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10
+    if (percentage >= 100) {
         block.className = "greenBefore";
         block.innerHTML = "100%";
     } else {
-        block.className = "yellowBefore";
-        block.innerHTML = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10 + "%+"
+        if (percentage >= 75) {
+            block.className = "ygBefore";
+        } else if (percentage >= 50) {
+            block.className = "yellowBefore";
+        } else if (percentage >= 25) {
+            block.className = "orangeBefore";
+        } else {
+            block.className = "redBefore";
+        }
+        block.innerHTML = percentage + "%+";
     }
 }
