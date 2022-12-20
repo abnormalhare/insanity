@@ -2,10 +2,10 @@ const amountSPC = {
     start: 1,
     chapters: [2, 2, 4, 104, 84, 187, 490]
 }
-let locationG = 0
+let locationG;
 const setPercentage = (block) => {
     ///// important
-    let locationSPC = 764
+    let locationSPC = 777
     /////
     locationG = locationSPC
     let indexSPC = 0
