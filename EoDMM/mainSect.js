@@ -12,7 +12,7 @@ const sectionList = [
     {type: "misc.", end: 864}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
-let section = 6
+let section = 7
 /////         VERY IMPORTANT           /////
 const chapCurr = document.getElementById("CC")
 const typeCurr = document.getElementById("TC")
