@@ -30,12 +30,12 @@ while (sectionList[chapter].type != "chapter") {
 }
 
 const setDisplay = (chap, type, area) => {
+    if (sectionList[section].type == "misc.") {
+        sectionList[section].type.italics()
+    }
     chap.innerHTML = sectionList[chapter].chapter
     type.innerHTML = sectionList[section].type
     area.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
-    if (type.innerHTML == "misc.") {
-        type.innerHTML.italics()
-    }
 }
 
 setDisplay(chapCurr, typeCurr, areaCurr)
