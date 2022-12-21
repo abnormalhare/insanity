@@ -28,6 +28,9 @@ const setPercentage = (block) => {
             block.className = "orangeBefore";
         } else {
             block.className = "redBefore";
+            if (percentage < 0) {
+                percentage = 0
+            }
         }
         block.innerHTML = percentage + "%+";
     }
