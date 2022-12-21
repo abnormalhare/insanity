@@ -9,7 +9,10 @@ const sectionList = [
     {type: "adant", end: 780},
     {type: "simp", end: 832},
     {type: "pm", end: 838},
-    {type: "misc.", end: 864}
+    {type: "misc.", end: 872},
+    {type: "chapter", chapter: "1.2.7", end: 872},
+    {type: "pm", end: 878},
+    {type: "imor", end: 882}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
 let section = 8
