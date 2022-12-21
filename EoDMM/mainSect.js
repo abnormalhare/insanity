@@ -34,7 +34,7 @@ const setDisplay = (chap, type, area) => {
     type.innerHTML = sectionList[section].type
     area.innerHTML = (sectionList[section - 1].end + 1) + "-" + sectionList[section].end
     if (sectionList[section].type == "misc.") {
-        type.style.font_style = "italic";
+        type.style.fontStyle = "italic";
     }
 }
 
