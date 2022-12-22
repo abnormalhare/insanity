@@ -5,7 +5,7 @@ const amountSPC = {
 let locationG;
 const setPercentage = (block) => {
     ///// important
-    let locationSPC = 838
+    let locationSPC = 848
     /////
     locationG = locationSPC
     let indexSPC = 0
