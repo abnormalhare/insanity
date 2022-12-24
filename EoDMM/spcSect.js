@@ -1,5 +1,5 @@
 const amountSPC = {
-    chapters: [3, 2, 4, 104, 84, 187, 490, 104]
+    chapters: [2, 2, 4, 104, 84, 187, 489, 103]
 }
 let locationG;
 const setPercentage = (block) => {
