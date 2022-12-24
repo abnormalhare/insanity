@@ -12,7 +12,11 @@ const sectionList = [
     {type: "misc.", end: 872},
     {type: "chapter", chapter: "1.2.7", end: 872},
     {type: "pm", end: 878},
-    {type: "imor", end: 882}
+    {type: "imor", end: 882},
+    {type: "ja", end: 886},
+    {type: "or", end: 899},
+    {type: "ol", end: 903},
+    {type: "pm", end: 909}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
 let section = 12
