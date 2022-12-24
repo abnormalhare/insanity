@@ -19,7 +19,7 @@ const setPercentage = (block) => {
     if (percentage >= 100) {
         block.className = "greenBefore";
         block.innerHTML = "100%";
-        if (percentage == 100) {
+        if (percentage == 100)
             block.innerHTML = "100%!"
     } else {
         if (percentage >= 75) {
