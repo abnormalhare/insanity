@@ -15,7 +15,7 @@ const sectionList = [
     {type: "imor", end: 882}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
-let section = 10
+let section = 12
 /////         VERY IMPORTANT           /////
 const chapCurr = document.getElementById("CC")
 const typeCurr = document.getElementById("TC")
