@@ -5,7 +5,7 @@ const amountSPC = {
 let locationG;
 const setPercentage = (block) => {
     ///// important
-    let locationSPC = 848
+    let locationSPC = 872
     /////
     locationG = locationSPC
     let indexSPC = 0
@@ -19,6 +19,8 @@ const setPercentage = (block) => {
     if (percentage >= 100) {
         block.className = "greenBefore";
         block.innerHTML = "100%";
+        if (percentage == 100) {
+            block.innerHTML = "100%!"
     } else {
         if (percentage >= 75) {
             block.className = "ygBefore";
