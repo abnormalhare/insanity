@@ -26,6 +26,10 @@ body {
   color: #0FF;
   display: inline;
 }
+.redBefore {
+  color: #eb0;
+  display: inline;
+}
 .yellowBefore {
   color: #cc0;
   display: inline;
