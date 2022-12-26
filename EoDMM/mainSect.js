@@ -16,7 +16,17 @@ const sectionList = [
     {type: "ja", end: 886},
     {type: "or", end: 899},
     {type: "ol", end: 903},
-    {type: "pm", end: 909}
+    {type: "pm", end: 909},
+    {type: "or", end: 916},
+    {type: "ex", end: 919},
+    {type: "pm", end: 931},
+    {type: "orbi", end: 943},
+    {type: "or/pm", end: 958},
+    {type: "bior", end: 962},
+    {type: "pm", end: 972},
+    {type: "misc", end: 976},
+    {type: "chapter", chapter: "1.2.8", end: 976},
+    {type: "jao", end: 986}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
 let section = 17
