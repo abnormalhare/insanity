@@ -39,6 +39,6 @@ const setPercentage = (block) => {
         }
         block.innerHTML = percentage + "%+";
     }
-    block.innerHTML += " (" + (amount - amountSPC.chapters[indexSPC - 1]) + "-" + amount + ")";
+    block.innerHTML += " (" + (amount - amountSPC.chapters[indexSPC]) + "-" + (amount - 1) + ")";
 }
 const position = () => { document.getElementById("LUP").innerHTML = locationG }
