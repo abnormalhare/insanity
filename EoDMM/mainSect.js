@@ -19,7 +19,7 @@ const sectionList = [
     {type: "pm", end: 909}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
-let section = 15
+let section = 17
 /////         VERY IMPORTANT           /////
 const chapCurr = document.getElementById("CC")
 const typeCurr = document.getElementById("TC")
