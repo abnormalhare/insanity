@@ -1,5 +1,5 @@
 const sectionList = [
-    {type: "chapter", chapter: "1.2.6", end: 633},
+    {type: "chapter", chapter: "1.2.6", end: 633}, // 0
     {type: "an", end: 651},
     {type: "anabs", end: 665},
     {type: "anand", end: 669},
@@ -9,7 +9,7 @@ const sectionList = [
     {type: "adant", end: 780},
     {type: "simp", end: 832},
     {type: "pm", end: 838},
-    {type: "misc.", end: 872},
+    {type: "misc.", end: 872},                     // 10
     {type: "chapter", chapter: "1.2.7", end: 872},
     {type: "pm", end: 878},
     {type: "imor", end: 882},
@@ -19,7 +19,7 @@ const sectionList = [
     {type: "pm", end: 909},
     {type: "or", end: 916},
     {type: "ex", end: 919},
-    {type: "pm", end: 931},
+    {type: "pm", end: 931},                        // 20
     {type: "orbi", end: 943},
     {type: "or/pm", end: 958},
     {type: "bior", end: 962},
