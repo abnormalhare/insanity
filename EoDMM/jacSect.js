@@ -12,8 +12,7 @@ const setPercentage = (block) => {
     const id = parseInt(block.id);
     while (indexSPC < id) {
         locationSPC -= i;
-        if (indexSPC > id - 1)
-            amount += i;
+        amount += i;
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
@@ -38,6 +37,6 @@ const setPercentage = (block) => {
         }
         block.innerHTML = percentage + "%+";
     }
-    block.innerHTML += " (" + amount + "-" + (amount + i) + ")";
+    block.innerHTML += " (" + (amount - i) + "-" + amount + ")";
 }
 const position = () => { document.getElementById("LUP").innerHTML = locationG }
