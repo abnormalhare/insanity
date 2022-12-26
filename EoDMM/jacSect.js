@@ -13,7 +13,7 @@ const setPercentage = (block) => {
     while (indexSPC < id) {
         locationSPC -= i;
         if (indexSPC > id - 1)
-            amountSPC += i;
+            amount += i;
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
