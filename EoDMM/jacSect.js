@@ -7,9 +7,9 @@ let locationG = 970;
 const setPercentage = (block) => {
     let locationSPC = locationG;
     let amountSPC = 0;
-    let indexSPC = 0
-    let i = amountSPC.chapters[indexSPC]
-    const id = parseInt(block.id)
+    let indexSPC = 0;
+    let i = amountSPC.chapters[indexSPC];
+    const id = parseInt(block.id);
     while (indexSPC < id) {
         locationSPC -= i;
         if (indexSPC > id - 1)
@@ -17,12 +17,12 @@ const setPercentage = (block) => {
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
-    let percentage = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10
+    let percentage = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10;
     if (percentage >= 100) {
         block.className = "greenBefore";
         block.innerHTML = "100%";
         if (percentage == 100)
-            block.innerHTML = "100%!"
+            block.innerHTML = "100%!";
     } else {
         if (percentage >= 75) {
             block.className = "ygBefore";
@@ -33,11 +33,11 @@ const setPercentage = (block) => {
         } else {
             block.className = "redBefore";
             if (percentage < 0) {
-                percentage = 0
+                percentage = 0;
             }
         }
         block.innerHTML = percentage + "%+";
     }
-    block.innerHTML += " (" + amountSPC + "-" + (amountSPC + i) + ")"
+    block.innerHTML += " (" + amountSPC + "-" + (amountSPC + i) + ")";
 }
 const position = () => { document.getElementById("LUP").innerHTML = locationG }
