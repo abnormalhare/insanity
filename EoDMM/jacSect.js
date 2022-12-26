@@ -16,6 +16,7 @@ const setPercentage = (block) => {
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
+    console.log(amount)
     let percentage = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10;
     if (percentage >= 100) {
         block.className = "greenBefore";
