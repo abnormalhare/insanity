@@ -1,16 +1,19 @@
 const amountSPC = {
     chapters: [2, 2, 4, 104, 84, 187, 489, 104]
 }
-let locationG;
+///// important
+let locationG = 970;
+/////
 const setPercentage = (block) => {
-    ///// important
-    let locationSPC = 970
-    /////
-    locationG = locationSPC
+    let locationSPC = locationG;
+    let amountSPC = 0;
     let indexSPC = 0
     let i = amountSPC.chapters[indexSPC]
-    while (indexSPC < parseInt(block.id)) {
+    const id = parseInt(block.id)
+    while (indexSPC < id) {
         locationSPC -= i;
+        if (indexSPC > id - 1)
+            amountSPC += i;
         indexSPC++;
         i = amountSPC.chapters[indexSPC];
     }
@@ -35,5 +38,6 @@ const setPercentage = (block) => {
         }
         block.innerHTML = percentage + "%+";
     }
+    block.innerHTML += " (" + amountSPC + "-" + (amountSPC + i) + ")"
 }
 const position = () => { document.getElementById("LUP").innerHTML = locationG }
