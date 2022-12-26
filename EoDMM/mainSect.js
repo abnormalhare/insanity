@@ -29,7 +29,7 @@ const sectionList = [
     {type: "jao", end: 986}
 ]
 ///// USE FOR UPDATING TO NEXT SECTION /////
-let section = 17
+let section = 19
 /////         VERY IMPORTANT           /////
 const chapCurr = document.getElementById("CC")
 const typeCurr = document.getElementById("TC")
