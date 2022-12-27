@@ -1,4 +1,4 @@
-phrases = [
+phrasesSS = [
     {name: "Complete", color: "rainbow"},
     {name: "Practically done", color: "blue"},
     {name: "Partially done", color: "green"},
@@ -9,7 +9,7 @@ phrases = [
 ]
 
 const setColor = (block) => {
-    for (let i = 0; i < phrases.length; i++) {
-        if (phrases[i].name == block.innerHTML) block.className = phrases[i].color + "Before"
+    for (let i = 0; i < phrasesSS.length; i++) {
+        if (phrasesSS[i].name == block.innerHTML) block.className = phrasesSS[i].color + "Before"
     }
 }
