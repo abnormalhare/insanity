@@ -41,4 +41,8 @@ const setPercentage = (block) => {
     }
     block.innerHTML += " (" + (amount - amountSPC.chapters[indexSPC]) + "-" + (amount - 1) + ")";
 }
-const position = () => { document.getElementById("LUP").innerHTML = locationG }
+const position = () => {
+    let posOut = locationG
+    if (locationG % 100) posOut += "!"
+    document.getElementById("LUP").innerHTML = locationG
+}
