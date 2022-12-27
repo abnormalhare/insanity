@@ -4,6 +4,7 @@ const amountSPC = {
 ///// important
 let locationG = 1014;
 /////
+let hasPoint = false;
 const setPercentage = (block) => {
     let locationSPC = locationG;
     let amount = 1;
@@ -24,6 +25,7 @@ const setPercentage = (block) => {
         block.innerHTML = "100%";
         if (percentage == 100)
             block.innerHTML = "100%!";
+            hasPoint = true;
     } else {
         if (percentage >= 75) {
             block.className = "ygBefore";
@@ -43,6 +45,6 @@ const setPercentage = (block) => {
 }
 const position = () => {
     let posOut = locationG
-    if (!(locationG % 100)) posOut += "!"
+    if (!(locationG % 100) || hasPoint) posOut += "!"
     document.getElementById("LUP").innerHTML = posOut
 }
