@@ -2,7 +2,7 @@ const amountSPC = {
     chapters: [2, 2, 4, 104, 84, 187, 489, 104, 108]
 }
 ///// important
-let locationG = 981;
+let locationG = 992;
 /////
 const setPercentage = (block) => {
     let locationSPC = locationG;
