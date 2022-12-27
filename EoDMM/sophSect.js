@@ -8,7 +8,7 @@ phrasesSS = [
     {name: "Not done", color: "red"}
 ]
 
-const setColor = (block) => {
+const setColorSS = (block) => {
     for (let i = 0; i < phrasesSS.length; i++) {
         if (phrasesSS[i].name == block.innerHTML) block.className = phrasesSS[i].color + "Before"
     }
