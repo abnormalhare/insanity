@@ -43,6 +43,6 @@ const setPercentage = (block) => {
 }
 const position = () => {
     let posOut = locationG
-    if (locationG % 100) posOut += "!"
+    if (!(locationG % 100)) posOut += "!"
     document.getElementById("LUP").innerHTML = posOut
 }
