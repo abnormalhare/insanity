@@ -279,7 +279,6 @@
       document.getElementById("wordinfo").innerHTML = ((CurrentWord <= LastHorizontalWord) ? "Across, " : "Down, ") + WordLength[CurrentWord] + " letters.";
       document.getElementById("wordclue").innerHTML = Clue[CurrentWord];
       document.getElementById("worderror").style.display = "none";
-      document.getElementById("cheatbutton").style.display = (Word.length == 0) ? "none" : "";
       if (TheirWordLength == WordLength[CurrentWord])
         document.getElementById("wordentry").value = TheirWord.replace(/&AMP;/g, '&');
       else
@@ -415,16 +414,6 @@
       document.getElementById("welcomemessage").style.display = "none";
     }
     
-    // Called when the "cheat" link is clicked.
-    function CheatClick()
-    {
-      if (CrosswordFinished) return;
-      var OldWord = CurrentWord;
-      document.getElementById("wordentry").value = Word[CurrentWord];
-      OKClick();
-      ChangeWordStyle(OldWord, "ecw-box ecw-boxcheated_unsel");
-    }
-    
     // Returns a one-way hash for a word.
     function HashWord(Word)
     {
@@ -462,7 +451,6 @@
     <div id="worderror" class="ecw-worderror"></div>
     
     <table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top:1em;"><tbody><tr><td>
-    <button id="cheatbutton" type="button" class="ecw-input ecw-button" onclick="CheatClick();">Solve</button>
     </td><td align="right">
     <button id="okbutton" type="button" class="ecw-input ecw-button" onclick="OKClick();" style="font-weight: bold;">OK</button> &nbsp;
     <button id="cancelbutton" type="button" class="ecw-input ecw-button" onclick="DeselectCurrentWord();">Cancel</button>
