@@ -1,5 +1,5 @@
 const amountSPC = {
-    chapters: [2, 2, 4, 104, 85, 188, 489, 104, 108, 18, 3, 502]
+    chapters: [2, 2, 4, 104, 85, 188, 492, 104, 108, 18, 3, 502]
 }
 ///// important
 let locationG = 1058;
