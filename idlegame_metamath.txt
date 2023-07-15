@@ -1,0 +1,31 @@
+Let's make a game!
+  name:Metamath (Temp)
+  author:CreateSource
+  desc:An idle game with the ultimate mission of proving 1 + 1 = 2... and beyond!
+  created:14/07/2023
+  updated:14/07/2023
+  version:0.00.1
+ 
+Settings
+  tiling background:https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png
+  buildings cost increase:110%
+  building cost refund:65%
+ 
+Resources
+  *meta
+    name:Meta
+    desc:The infinitesimally small parts that make up math as we know it.
+ 
+Buildings
+  *idi
+    name:Theorem idi
+    desc:A theorem that asserts itself. Due to its recursive nature, this theorem allows you to increase the amount of Metas you have.
+    cost:10 metas
+    on tick:yield 1 meta
+ 
+Upgrades
+  *wn
+    name:Syntax wn
+    desc:Thanks to its inversing capabilities, doubles the amount of Metas Theorem idi creates.
+    req:10 metas per second
+    cost:1000 metas
