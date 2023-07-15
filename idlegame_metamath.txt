@@ -29,6 +29,13 @@ Buildings
     desc:A theorem that asserts itself. Due to its recursive nature, this theorem allows you to increase the amount of Metas you have.
     on tick:yield 0.5 meta
     cost:15 meta
+
+  *a1ii
+    name:Theorem a1ii
+    desc:A theorem that requires two hypotheses to produce itself. While less powerful, with the help of idi's, can make more than imaginable.
+    on tick:yield 5 meta
+    cost:60 meta
+    cost:1 idi
  
 Upgrades
   *wn
