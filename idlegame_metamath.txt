@@ -27,5 +27,4 @@ Upgrades
   *wn
     name:Syntax wn
     desc:Thanks to its inversing capabilities, doubles the amount of Metas Theorem idi creates.
-    req:10 metas per second
     cost:1000 metas
