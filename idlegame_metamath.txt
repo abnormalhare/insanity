@@ -14,7 +14,7 @@ Settings
 Buttons
   *metaButton
     name:Meta
-    desc:The infinitesimally small parts that make up math as we know it.
+    desc:Click to join the metaverse!
     on click:yield 1 meta
 
 Resources
