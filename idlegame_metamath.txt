@@ -41,4 +41,5 @@ Upgrades
   *wn
     name:Syntax wn
     desc:Thanks to its inversing capabilities, doubles the amount of Metas Theorem idi creates.
+    passive:multiply yield of idi by 2
     cost:1000 metas
