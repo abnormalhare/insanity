@@ -22,7 +22,6 @@ Resources
     name:Meta
     desc:The infinitesimally small parts that make up math as we know it.
     show earned
-    hidden
  
 Buildings
   *idi
