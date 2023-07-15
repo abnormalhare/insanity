@@ -12,7 +12,7 @@ Settings
   building cost refund:65%
 
 Buttons
-  *meta_button
+  *metaButton
     name:Meta
     desc:The infinitesimally small parts that make up math as we know it.
     on click:yield 1 meta
