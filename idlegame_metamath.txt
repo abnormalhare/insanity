@@ -28,8 +28,8 @@ Buildings
   *idi
     name:Theorem idi
     desc:A theorem that asserts itself. Due to its recursive nature, this theorem allows you to increase the amount of Metas you have.
-    cost:10 metas
-    on tick:yield 1 meta
+    cost:15 metas
+    on tick:yield 0.1 meta
  
 Upgrades
   *wn
