@@ -4,38 +4,55 @@ Let's make a game!
   desc:An idle game with the ultimate mission of proving 1 + 1 = 2... and beyond!
   created:14/07/2023
   updated:14/07/2023
-  version:0.00.1
+  version:0.00.2
  
 Settings
   tiling background:https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png
   buildings cost increase:110%
   building cost refund:65%
 
-Buttons
-  *metaButton
-    name:Meta
-    desc:Click to join the metaverse!
-    on click:yield 1 meta
-
 Resources
   *meta
     name:Meta
     desc:The infinitesimally small parts that make up math as we know it.
     show earned
- 
+    starts with:3
+
+  
+
 Buildings
+  // variables and such
+  *truth
+    name:⊢
+    desc:The symbol of truth, the beginning of all theorems.
+    cost:1 meta
+
+  *phi
+    name:𝜑
+    desc:Phi, the first variable added when constructing theorems
+    cost:2 meta
+    on click:if (have phi) show idi
+
+  *psi
+    name:𝜓
+    desc:Psi, the second variable added when constructing theorems
+    cost:2 meta
+    hidden
+
   *idi
     name:Theorem idi
     desc:A theorem that asserts itself. Due to its recursive nature, this theorem allows you to increase the amount of Metas you have.
     on tick:yield 0.5 meta
-    cost:15 meta
+    cost:1 phi
+    cost:1 truth
+    on click:if (have idi) show psi
+    hidden
 
   *a1ii
     name:Theorem a1ii
     desc:A theorem that requires two hypotheses to produce itself. While less powerful, with the help of idi's, can make more than imaginable.
     on tick:yield 5 meta
-    cost:60 meta
-    cost:1 idi
+    hidden
  
 Upgrades
   *wn
