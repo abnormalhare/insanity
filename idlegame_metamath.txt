@@ -10,13 +10,13 @@ Settings
   tiling background:https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png
   buildings cost increase:110%
   building cost refund:65%
-  starts with:3 meta
 
 Resources
   *meta
     name:Meta
     desc:The infinitesimally small parts that make up math as we know it.
     show earned
+    start with:3 meta
 
   
 
