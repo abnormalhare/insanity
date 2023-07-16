@@ -42,7 +42,7 @@ Buildings
   *idi
     name:Theorem idi
     desc:A theorem that asserts itself. Due to its recursive nature, this theorem allows you to increase the amount of Metas you have.
-    on tick:yield 0.5 meta
+    on tick:yield 1 meta
     cost:1 phi
     cost:1 truth
     on click:if (have idi) show psi
