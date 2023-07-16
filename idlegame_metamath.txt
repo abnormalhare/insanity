@@ -8,7 +8,7 @@ Let's make a game!
  
 Settings
   tiling background:https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png
-  buildings cost increase:100%
+  buildings cost increase:0%
   building cost refund:65%
 
 Resources
