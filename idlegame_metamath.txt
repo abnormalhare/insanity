@@ -16,7 +16,7 @@ Resources
     name:Meta
     desc:The infinitesimally small parts that make up math as we know it.
     show earned
-    starts with:3
+    starts with:3 meta
 
   
 
