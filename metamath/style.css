@@ -31,7 +31,6 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
-    margin: 0 1px;
 }
 
 .meta-container {
@@ -40,14 +39,10 @@
     font-size: 24px;
 }
 
-#resources {
-    display: flex;
+.meta-container p {
+    margin: 0;
 }
 
-#variables-container {
-    margin-right: 10px;
-}
-
-#syntax-container {
-    /* Add any additional styles for the syntax container */
+.meta-container span {
+    font-weight: bold;
 }
