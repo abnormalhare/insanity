@@ -42,12 +42,15 @@
 
 #resources {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #variables-container {
     margin-right: 10px;
+    flex: 1 1 50%;
 }
 
 #syntax-container {
+    flex: 1 1 50%;
     /* Add any additional styles for the syntax container */
 }
