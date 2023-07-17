@@ -12,10 +12,23 @@ function purchaseItem(cost) {
   if (metaAmount >= cost) {
     metaAmount -= cost;
     updateMetaCount();
-    alert("Item purchased successfully!");
+    showMessage("Item purchased successfully!", "success");
   } else {
-    alert("Not enough meta to purchase this item!");
+    showMessage("Not enough meta to purchase this item!", "error");
   }
+}
+
+// Show pop-up message
+function showMessage(message, type) {
+  const popUp = document.createElement("div");
+  popUp.className = `pop-up ${type}`;
+  popUp.textContent = message;
+  document.body.appendChild(popUp);
+
+  // Remove the pop-up after a set time
+  setTimeout(function () {
+    popUp.remove();
+  }, 2000);
 }
 
 // Set event listeners for the resources
