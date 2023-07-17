@@ -45,7 +45,7 @@ function showMessage(message, type) {
 function setResourceEventListeners() {
   const resourceItems = document.querySelectorAll("#resources .item-container");
   resourceItems.forEach(function (item) {
-    const resourceName = item.querySelector(".name").textContent.toLowerCase();
+    const resourceName = item.querySelector(".name").innerHTML.toLowerCase();
     item.addEventListener("click", function () {
       const costElement = this.querySelector(".cost");
       const cost = parseInt(costElement.textContent);
