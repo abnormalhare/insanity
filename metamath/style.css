@@ -40,12 +40,14 @@
     font-size: 24px;
 }
 
-#variables-container,
-#syntax-container {
+#resources {
     display: flex;
-    flex-direction: column;
+}
+
+#variables-container {
+    margin-right: 10px;
 }
 
 #syntax-container {
-    margin-left: 20px;
+    /* Add any additional styles for the syntax container */
 }
