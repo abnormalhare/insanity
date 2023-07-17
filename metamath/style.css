@@ -34,7 +34,7 @@
 }
 
 .meta-container {
-    width: calc(240px + 2px);
+    width: 242px;
     height: 60px;
     font-size: 24px;
 }
