@@ -92,16 +92,20 @@ body {
   }
   
   @keyframes fadeUp {
-    0% {
+    0%, 20% {
       opacity: 1;
       transform: translateY(0);
     }
-    90% {
+    50% {
       opacity: 1;
       transform: translateY(-50px);
     }
-    100% {
-      opacity: 0;
+    80% {
+      opacity: 0.5;
       transform: translateY(-60px);
+    }
+    100% {
+      opacity: 0.5;
+      transform: translateY(-65px);
     }
   }
