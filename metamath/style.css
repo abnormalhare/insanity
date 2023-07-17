@@ -65,6 +65,7 @@ body {
 
 .item-container {
     margin-bottom: 10px;
+    color: #111;
 }
 
 .pop-up {
@@ -76,10 +77,10 @@ body {
     width: fit-content;
     padding: 10px 20px;
     border-radius: 4px;
-    color: #fff;
+    color: #111;
     font-weight: bold;
     opacity: 0;
-    animation: fadeUp 2s ease forwards;
+    animation: fadeUp 5s ease forwards;
   }
   
   .success {
