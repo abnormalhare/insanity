@@ -31,6 +31,7 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
+    margin: 0 1px;
 }
 
 .meta-container {
@@ -39,10 +40,12 @@
     font-size: 24px;
 }
 
-.meta-container p {
-    margin: 0;
+#variables-container,
+#syntax-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.meta-container span {
-    font-weight: bold;
+#syntax-container {
+    margin-left: 20px;
 }
