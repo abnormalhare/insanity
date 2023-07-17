@@ -1,6 +1,15 @@
 // Set initial amount of meta
 let metaAmount = 3;
 
+// Resources object with names and amounts
+const resources = {
+  phi: { name: "Phi", amount: 0 },
+  psi: { name: "Psi", amount: 0 },
+  chi: { name: "Chi", amount: 0 },
+  not: { name: "Not", amount: 0 },
+  imply: { name: "Imply", amount: 0 }
+};
+
 // Update meta count on the page
 function updateMetaCount() {
   const metaCountElement = document.getElementById("meta-amount");
@@ -8,11 +17,12 @@ function updateMetaCount() {
 }
 
 // Increase meta count when an item is purchased
-function purchaseItem(cost) {
+function purchaseItem(cost, resource) {
   if (metaAmount >= cost) {
     metaAmount -= cost;
     updateMetaCount();
-    showMessage("Item purchased successfully!", "success");
+    resources[resource].amount++;
+    showMessage(`${resources[resource].name} purchased successfully!`, "success");
   } else {
     showMessage("Not enough meta to purchase this item!", "error");
   }
@@ -35,10 +45,11 @@ function showMessage(message, type) {
 function setResourceEventListeners() {
   const resourceItems = document.querySelectorAll("#resources .item-container");
   resourceItems.forEach(function (item) {
+    const resourceName = item.getAttribute("data-resource");
     item.addEventListener("click", function () {
       const costElement = this.querySelector(".cost");
       const cost = parseInt(costElement.textContent);
-      purchaseItem(cost);
+      purchaseItem(cost, resourceName);
     });
   });
 }
