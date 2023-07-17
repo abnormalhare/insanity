@@ -20,3 +20,10 @@
 #prestige-btn {
     margin-bottom: 5px;
 }
+
+.item-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+}

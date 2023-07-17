@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Metamath Idle Game</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div id="game-container">
-            <div id="menu">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png" alt="Logo" id="logo">
-                <div id="menu-buttons">
-                    <button id="stats-btn">Stats</button>
-                    <button id="prestige-btn">Prestige</button>
-                </div>
-            </div>
-            <div id="game-content">
-                <div id="resources">
-                    <h2>Resources</h2>
-                    <p>Meta: <span id="meta-amount">0</span></p>
-                    <!-- Add purchasable items here -->
-                </div>
+<head>
+    <title>Metamath Idle Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="menu">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png" alt="Logo" id="logo">
+            <div id="menu-buttons">
+                <button id="stats-btn">Stats</button>
+                <button id="prestige-btn">Prestige</button>
             </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div id="game-content">
+            <div id="resources">
+                <h2>Resources</h2>
+                <p>Meta: <span id="meta-amount">0</span></p>
+                <div class="item-container">
+                    <h3>Item Name</h3>
+                    <p>Cost: 10 Meta</p>
+                    <button onclick="purchaseItem()">Purchase</button>
+                </div>
+                <!-- Add more purchasable items here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
