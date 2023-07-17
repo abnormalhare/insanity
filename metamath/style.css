@@ -52,6 +52,12 @@
     align-items: flex-start;
 }
 
+#variable-syntax-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .item-container {
     margin-bottom: 10px;
 }
