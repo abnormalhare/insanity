@@ -33,15 +33,16 @@
     background-color: #f8f8f8;
 }
 
-.symbol {
-    font-size: 40px;
+.meta-container {
+    width: calc(240px + 2px);
+    height: 60px;
+    font-size: 24px;
 }
 
-.name {
-    font-size: 16px;
+.meta-container p {
+    margin: 0;
 }
 
-.cost {
-    font-size: 14px;
-    color: #888;
+.meta-container span {
+    font-weight: bold;
 }
