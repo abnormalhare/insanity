@@ -1,17 +1,26 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Metamath Idle (temp)</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Metamath Idle Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="menu">
-            <div id="logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Metamath_logo.png" alt="Metamath Idle">
+        <div id="game-container">
+            <div id="menu">
+                <img src="logo.png" alt="Logo" id="logo">
+                <div id="menu-buttons">
+                    <button id="stats-btn">Stats</button>
+                    <button id="prestige-btn">Prestige</button>
+                </div>
             </div>
-            <div id="menu-left">
-                <div id="main-button">
+            <div id="game-content">
+                <div id="resources">
+                    <h2>Resources</h2>
+                    <p>Meta: <span id="meta-amount">0</span></p>
+                    <!-- Add purchasable items here -->
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
