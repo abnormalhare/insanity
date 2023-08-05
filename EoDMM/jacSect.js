@@ -1,24 +1,23 @@
-const amountSPC = {
-    chapters: [2, 2, 4, 104, 85, 188, 448, 104, 106, 17, 6, 396, 25, 17, 26, 26]
-}
 ///// important
+const chapters = [2, 2, 4, 104, 85, 188, 448, 104, 106, 17, 6, 396, 25, 17, 26, 26]
 let locationG = 1100;
 /////
+
 const setPercentage = (block) => {
     let locationSPC = locationG;
     let amount = 1;
     let indexSPC = 0;
-    let i = amountSPC.chapters[indexSPC];
+    let i = chapters[indexSPC];
     const id = parseInt(block.id);
     while (indexSPC < id) {
         locationSPC -= i;
         amount += i;
         indexSPC++;
-        i = amountSPC.chapters[indexSPC];
+        i = chapters[indexSPC];
     }
-    amount += amountSPC.chapters[indexSPC]
+    amount += chapters[indexSPC]
     console.log(amount)
-    let percentage = Math.round(locationSPC / amountSPC.chapters[indexSPC] * 1000) / 10;
+    let percentage = Math.round(locationSPC / chapters[indexSPC] * 1000) / 10;
     if (percentage >= 100) {
         block.className = "greenBefore";
         block.innerHTML = "100%";
@@ -39,7 +38,7 @@ const setPercentage = (block) => {
         }
         block.innerHTML = percentage + "%+";
     }
-    block.innerHTML += " (" + (amount - amountSPC.chapters[indexSPC]) + "-" + (amount - 1) + ")";
+    block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
 }
 const position = () => {
     let posOut = locationG
