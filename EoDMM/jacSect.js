@@ -15,14 +15,12 @@ const setPercentage = (block) => {
         indexSPC++;
         i = chapters[indexSPC];
     }
-    amount += chapters[indexSPC]
-    console.log(amount)
+    amount += chapters[indexSPC];
     let percentage = Math.round(locationSPC / chapters[indexSPC] * 1000) / 10;
     if (percentage >= 100) {
         block.className = "greenBefore";
         block.innerHTML = "100%";
-        if (percentage == 100)
-            block.innerHTML = "100%!";
+        if (percentage == 100) block.innerHTML = "100%!";
     } else {
         if (percentage >= 75) {
             block.className = "ygBefore";
@@ -41,7 +39,7 @@ const setPercentage = (block) => {
     block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
 }
 const position = () => {
-    let posOut = locationG
-    if (!(locationG % 100)) posOut += "!"
-    document.getElementById("LUP").innerHTML = posOut
+    let posOut = locationG;
+    if (!(locationG % 100)) posOut += "!";
+    document.getElementById("LUP").innerHTML = posOut;
 }
