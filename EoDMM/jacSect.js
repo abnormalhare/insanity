@@ -49,7 +49,7 @@ const sectPercentage = (block) => {
     let x = 0;
     for (let i in addPart) {
         x += i;
-        print(x, i)
+       console.log(x, i)
     }
     block.innerHTML = Math.round(x / addPart.length * 10) / 10;
 }
