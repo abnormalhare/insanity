@@ -50,7 +50,7 @@ const sectPercentage = (block) => {
     for (let i in addPart) {
         x += i;
     }
-    block.innerHTML = x / addPart.length();
+    block.innerHTML = Math.round(x / addPart.length());
 }
 
 const position = () => {
