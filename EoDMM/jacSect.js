@@ -19,9 +19,9 @@ const setPercentage = (block) => {
     }
     amount += chapters[indexSPC];
     let percentage = Math.round(locationSPC / chapters[indexSPC] * 1000) / 10;
-    sectPercentageList.push(percentage);
-    console.log(percentage);
     if (percentage >= 100) {
+        sectPercentageList.push(100.0);
+        
         block.className = "greenBefore";
         block.innerHTML = "100%";
         if (percentage == 100) block.innerHTML = "100%!";
@@ -39,6 +39,9 @@ const setPercentage = (block) => {
             }
         }
         block.innerHTML = percentage + "%+";
+
+        if (percentage < 0) sectPercentageList.push(0.0);
+        else sectPercentageList.push(percentage);
     }
     block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
 }
