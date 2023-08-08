@@ -5,6 +5,32 @@ let sectPercentageList = [];
 let sectNumStart = 0;
 /////
 
+const interpretPercentage = (block, percentage) => {
+    if (percentage >= 100) {
+        block.className = "greenBefore";
+        if (block != null) block.innerHTML = "100%";
+        if (percentage == 100) block.innerHTML = "100%!";
+    } else if (block != null) {
+        if (percentage >= 75) {
+            block.className = "ygBefore";
+        } else if (percentage >= 50) {
+            block.className = "yellowBefore";
+        } else if (percentage >= 25) {
+            block.className = "orangeBefore";
+        } else {
+            block.className = "redBefore";
+            if (percentage < 0) {
+                percentage = 0;
+            }
+        }
+        block.innerHTML = percentage + "%+";
+    }
+    
+    if (percentage > 100) percentage = 100;
+    else if (percentage < 0) percentage = 0;
+    return percentage;
+}
+
 const setPercentage = (block) => {
     let locationSPC = locationG;
     let amount = 1;
@@ -19,30 +45,8 @@ const setPercentage = (block) => {
     }
     amount += chapters[indexSPC];
     let percentage = Math.round(locationSPC / chapters[indexSPC] * 1000) / 10;
-    if (percentage >= 100) {
-        sectPercentageList.push(100.0);
-        
-        block.className = "greenBefore";
-        block.innerHTML = "100%";
-        if (percentage == 100) block.innerHTML = "100%!";
-    } else {
-        if (percentage >= 75) {
-            block.className = "ygBefore";
-        } else if (percentage >= 50) {
-            block.className = "yellowBefore";
-        } else if (percentage >= 25) {
-            block.className = "orangeBefore";
-        } else {
-            block.className = "redBefore";
-            if (percentage < 0) {
-                percentage = 0;
-            }
-        }
-        block.innerHTML = percentage + "%+";
-
-        if (percentage < 0) sectPercentageList.push(0.0);
-        else sectPercentageList.push(percentage);
-    }
+    percentage = interpretPercentage(block, percentage);
+    sectPercentageList.push(percentage);
     block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
 }
 
@@ -55,6 +59,7 @@ const sectPercentage = (block) => {
         x += addPart[i];
         console.log(x, addPart[i]);
     }
+    x = interpretPercentage(null, x)
     block.innerHTML = Math.round(x / addPart.length * 10) / 10;
 }
 
