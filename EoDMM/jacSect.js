@@ -47,9 +47,9 @@ const sectPercentage = (block) => {
     const addPart = sectPercentageList.slice(sectNumStart, num + 1);
     sectPercentageList = sectPercentageList.slice(num + 1);
     let x = 0;
-    for (let i in addPart) {
-        x += i;
-       console.log(x, i)
+    for (let i = 0; i < addPart.length; i++) {
+        x += addPart[i];
+        console.log(x, i)
     }
     block.innerHTML = Math.round(x / addPart.length * 10) / 10;
 }
