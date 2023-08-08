@@ -1,7 +1,7 @@
 ///// important
 const chapters = [2, 2, 4, 104, 85, 188, 448, 104, 106, 17, 6, 396, 25, 17, 26, 26]
 let locationG = 1322;
-let sectPercentage = [];
+let sectPercentageList = [];
 let sectNumStart = 0;
 /////
 
@@ -44,8 +44,8 @@ const setPercentage = (block) => {
 
 const sectPercentage = (block) => {
     const num = parseInt(block.id.split("-")[1]);
-    const addPart = sectPercentage.slice(sectNumStart, num + 1);
-    sectPercentage = sectPercentage.slice(num + 1);
+    const addPart = sectPercentageList.slice(sectNumStart, num + 1);
+    sectPercentageList = sectPercentageList.slice(num + 1);
     let x = 0;
     for (let i in addPart) {
         x += i;
