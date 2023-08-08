@@ -6,9 +6,9 @@ let sectNumStart = 0;
 /////
 
 const interpretPercentage = (block, percentage) => {
-    if (percentage >= 100) {
+    if (percentage >= 100 && block != null) {
         block.className = "greenBefore";
-        if (block != null) block.innerHTML = "100%";
+        block.innerHTML = "100%";
         if (percentage == 100) block.innerHTML = "100%!";
     } else if (block != null) {
         if (percentage >= 75) {
