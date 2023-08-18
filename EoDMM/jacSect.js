@@ -1,6 +1,6 @@
 ///// important
 const chapters = [2, 2, 4, 104, 85, 188, 448, 104, 106, 17, 6, 396, 25, 17, 26, 26]
-let locationG = 1412;
+let locationG = 1424;
 let sectPercentageList = [];
 let sectNumStart = 0;
 /////
