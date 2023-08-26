@@ -1,5 +1,22 @@
 ///// important
-const chapters = [2, 2, 4, 104, 85, 188, 446, 104, 106, 17, 6, 396, 25, 17, 26, 26]
+const chapters = [
+    2,   // 
+    2,   // wff
+    4,   // ⊢
+    104, // →
+    85,  // ¬
+    188, // ⟷
+    446, // ∧
+    104, // ∨
+    106, // ∧ + ∨
+    18,  // if
+    6,   // ded
+    396, // 3wff
+    25,  // nand
+    17,  // xor
+    26,  // ∀, =, ⊤, ⊥
+    26   // ⊤ + ⊥
+]
 let locationG = 1486;
 let sectPercentageList = [];
 let sectNumStart = 0;
