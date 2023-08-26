@@ -15,7 +15,8 @@ const chapters = [
     25,  // nand
     17,  // xor
     26,  // ∀, =, ⊤, ⊥
-    26   // ⊤ + ⊥
+    26,   // ⊤ + ⊥
+    28
 ]
 let locationG = 1522;
 let sectPercentageList = [];
