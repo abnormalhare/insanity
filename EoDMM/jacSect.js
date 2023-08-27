@@ -18,7 +18,7 @@ const chapters = [
     26,   // ⊤ + ⊥
     28
 ]
-let locationG = 1522;
+let locationG = 1529;
 let sectPercentageList = [];
 let sectNumStart = 0;
 /////
