@@ -78,9 +78,7 @@ const sectPercentage = (num) => {
         let blockSet = document.getElementById(""+i);
         sectPercent += setPercentage(blockSet, sectPercentList);
     }
-    console.log(sectPercent);
     sectPercent = Math.round(sectPercent / num * 10) / 10;
-    console.log(sectPercent);
     interpretPercentage(block, sectPercent);
 }
 
