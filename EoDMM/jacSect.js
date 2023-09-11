@@ -72,9 +72,11 @@ const setPercentage = (block, list) => {
 const sectPercentage = (num) => {
     let sectPercentList = [];
     const block = document.getElementById("sect-"+num);
-    num = num - sectAt;
+    let numC = num
+    sectAt = num
+    num = numC - sectAt;
     sectPercent = 0;
-    for (let i = 1; i <= num; i++) {
+    for (let i = 1 + sectAt; i <= num; i++) {
         let blockSet = document.getElementById(""+i);
         setPercentage(blockSet, sectPercentList);
         sectPercent += chapters[i-1]
