@@ -19,7 +19,7 @@ const chapters = [
     28
 ]
 let locationG = 1571;
-let sectPercentageList = [];
+let sectAt = 0;
 let sectNumStart = 0;
 /////
 
@@ -49,7 +49,7 @@ const interpretPercentage = (block, percentage) => {
     return percentage;
 }
 
-const setPercentage = (block) => {
+const setPercentage = (block, list) => {
     let locationSPC = locationG;
     let amount = 1;
     let indexSPC = 0;
@@ -64,21 +64,21 @@ const setPercentage = (block) => {
     amount += chapters[indexSPC];
     let percentage = Math.round(locationSPC / chapters[indexSPC] * 1000) / 10;
     percentage = interpretPercentage(block, percentage);
-    sectPercentageList.push(percentage);
+    list.push(percentage);
     block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
+    return percentage;
 }
 
-const sectPercentage = (block) => {
-    const num = parseInt(block.id.split("-")[1]);
-    const addPart = sectPercentageList.slice(sectNumStart, num + 1);
-    sectPercentageList = sectPercentageList.slice(num + 1);
-    let x = 0;
-    for (let i = 0; i < addPart.length; i++) {
-        x += addPart[i];
-        console.log(x, addPart[i]);
+const sectPercentage = (num) => {
+    let sectPercentList = []
+    const block = document.getElementById("sect-"+num);
+    num = parseInt(num) - sectAt
+    sectPercent = 0;
+    for (let i = 0; i <= num; i++) {
+        sectPercent += setPercentage(document.getElementById(""+i), sectPercentList);
     }
-    x = Math.round(x / addPart.length * 10) / 10;
-    interpretPercentage(block, x)
+    sectPercent = Math.round(sectPercent / num * 10) / 10;
+    interpretPercentage(block, sectPercent)
 }
 
 const position = () => {
