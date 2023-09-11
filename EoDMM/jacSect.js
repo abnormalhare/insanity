@@ -66,22 +66,19 @@ const setPercentage = (block, list) => {
     percentage = interpretPercentage(block, percentage);
     list.push(percentage);
     block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
+    return percentage;
 }
 
 const sectPercentage = (num) => {
     let sectPercentList = [];
     const block = document.getElementById("sect-"+num);
-    let numC = num
-    sectAt = num
-    num = numC - sectAt;
+    num = num - sectAt;
     sectPercent = 0;
-    for (let i = 1 + sectAt; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         let blockSet = document.getElementById(""+i);
-        setPercentage(blockSet, sectPercentList);
-        sectPercent += chapters[i-1]
+        sectPercent += setPercentage(blockSet, sectPercentList);
     }
-    sectPercent += chapters[i]
-    sectPercent = Math.round(locationG / sectPercent * 10) / 10;
+    sectPercent = Math.round(sectPercent / num * 10) / 10;
     interpretPercentage(block, sectPercent);
 }
 
