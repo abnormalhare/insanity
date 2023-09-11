@@ -70,18 +70,17 @@ const setPercentage = (block, list) => {
 }
 
 const sectPercentage = (num) => {
-    console.log("AAAAAAAAAAAA")
-    let sectPercentList = []
+    let sectPercentList = [];
     const block = document.getElementById("sect-"+num);
-    num = parseInt(num) - sectAt
+    num = parseInt(num) - sectAt;
     sectPercent = 0;
-    console.log("AAAAAAAAAAAA")
-    for (let i = 0; i <= num; i++) {
+    for (let i = 0; i < num; i++) {
+        console.log(i, num)
         sectPercent += setPercentage(document.getElementById(""+i), sectPercentList);
         console.log(sectPercent);
     }
     sectPercent = Math.round(sectPercent / num * 10) / 10;
-    interpretPercentage(block, sectPercent)
+    interpretPercentage(block, sectPercent);
 }
 
 const position = () => {
