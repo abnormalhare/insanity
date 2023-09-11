@@ -18,7 +18,7 @@ const chapters = [
     26,  // ⊤ + ⊥
     28,  // add
 ]
-let locationG = 1571;
+const locationG = 1571;
 let sectAt = 0;
 let sectNumStart = 0;
 /////
@@ -66,7 +66,6 @@ const setPercentage = (block, list) => {
     percentage = interpretPercentage(block, percentage);
     list.push(percentage);
     block.innerHTML += " (" + (amount - chapters[indexSPC]) + "-" + (amount - 1) + ")";
-    return indexSPC;
 }
 
 const sectPercentage = (num) => {
