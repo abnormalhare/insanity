@@ -1,23 +1,29 @@
 ///// important
-const chapters = [[
-    2,   // 
-    2,   // wff
-    4,   // ⊢
-    104, // →
-    85,  // ¬
-    188, // ⟷
-    446, // ∧
-    104, // ∨
-    106, // ∧ + ∨
-    18,  // if
-    6,   // ded
-    396, // 3wff
-    25,  // nand
-    17,  // xor
-    26,  // ∀, =, ⊤, ⊥
-    26,  // ⊤ + ⊥
-    28,  // add
-]];
+const chapters = [
+    [
+        2,   // 
+        2,   // wff
+        4,   // ⊢
+        104, // →
+        85,  // ¬
+        188, // ⟷
+        446, // ∧
+        104, // ∨
+        106, // ∧ + ∨
+        18,  // if
+        6,   // ded
+        396, // 3wff
+        25,  // nand
+        17,  // xor
+        26,  // ∀, =, ⊤, ⊥
+        26,  // ⊤ + ⊥
+        28,  // add
+    ],
+    [
+        6
+    ],
+];
+let chapterLengths = [];
 const locationG = 1597;
 let sectAt = 0;
 let sectNumStart = 0;
@@ -57,6 +63,7 @@ const setPercentage = (block, list) => {
     let i = chapters[sectIter][indexSPC];
     const blockId = block.id;
     const id = parseInt(blockId.slice(blockId.indexOf("-"), blockId.length - 1));
+    console.log(id);
     while (indexSPC < id) {
         locationSPC -= i;
         amount += i;
