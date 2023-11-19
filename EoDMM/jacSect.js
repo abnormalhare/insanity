@@ -68,7 +68,7 @@ const setPercentage = (block, list) => {
     // id of html block
     const blockId = block.id;
     // chapter of html block
-    const id = parseInt(blockId.slice(blockId.indexOf("-"), blockId.length - 1));
+    const id = str.split('-')[1]
     console.log(blockId.length - 1);
 
     // skip over any previous arrays we've already done
