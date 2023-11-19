@@ -69,7 +69,7 @@ const setPercentage = (block, list) => {
     const blockId = block.id;
     // chapter of html block
     const id = parseInt(blockId.slice(blockId.indexOf("-"), blockId.length - 1));
-    console.log(id);
+    console.log(blockId.slice(blockId.indexOf("-"), blockId.length - 1));
 
     // skip over any previous arrays we've already done
     for (let l = 0; l < sectIter; l++) {
