@@ -55,7 +55,7 @@ const setPercentage = (block, list) => {
     let amount = 1;
     let indexSPC = 0;
     let i = chapters[sectIter][indexSPC];
-    const id = parseInt(block.id);
+    const id = parseInt(block.id.charAt(block.id.length - 1));
     while (indexSPC < id) {
         locationSPC -= i;
         amount += i;
