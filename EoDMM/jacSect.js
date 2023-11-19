@@ -65,10 +65,8 @@ const setPercentage = (block, list) => {
     let indexSPC = 0;
     // chapter
     let i = chapters[sectIter][indexSPC];
-    // id of html block
-    const blockId = block.id;
     // chapter of html block
-    const id = str.split('-')[1]
+    const id = block.id.split('-')[1]
     console.log(blockId.length - 1);
 
     // skip over any previous arrays we've already done
