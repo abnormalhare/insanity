@@ -1,5 +1,5 @@
 ///// important
-const chapters[sectIter] = [[
+const chapters = [[
     2,   // 
     2,   // wff
     4,   // ⊢
