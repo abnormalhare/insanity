@@ -1,5 +1,5 @@
 ///// important
-const chapters = [
+const chapters = [[
     2,   // 
     2,   // wff
     4,   // ⊢
@@ -17,7 +17,7 @@ const chapters = [
     26,  // ∀, =, ⊤, ⊥
     26,  // ⊤ + ⊥
     28,  // add
-]
+]];
 const locationG = 1597;
 let sectAt = 0;
 let sectNumStart = 0;
@@ -71,14 +71,16 @@ const setPercentage = (block, list) => {
 
 const sectPercentage = (num) => {
     let sectPercentList = [];
-    const block = document.getElementById("sect-"+num);
+    let i;
     num = num - sectAt;
     sectPercent = 0;
-    for (let i = 1; i <= num; i++) {
+    for (i = 1; i <= num; i++) {
         let blockSet = document.getElementById(""+i);
         sectPercent += setPercentage(blockSet, sectPercentList);
     }
+    console.log(i);
     sectPercent = Math.round(sectPercent / num * 10) / 10;
+    const block = document.getElementById("sect-"+num);
     interpretPercentage(block, sectPercent);
 }
 
