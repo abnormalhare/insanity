@@ -21,8 +21,13 @@ const chapters = [
         15,  // cadd
     ],
     [
-        0, // i did this to myself
-        6, // min
+        0,   // i did this to myself
+        6,   // min
+        12,  // imp
+        17,  // meredith
+        11,  // luka
+        6,   // nic
+        
     ],
 ];
 let chapterLengths = [1599];
