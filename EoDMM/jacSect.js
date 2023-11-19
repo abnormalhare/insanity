@@ -26,7 +26,7 @@ const chapters = [
     ],
 ];
 let chapterLengths = [1599];
-const locationG = 1597;
+const locationG = 1599;
 let sectAt = 0;
 let sectNumStart = 0;
 let sectIter = 0;
