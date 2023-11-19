@@ -18,7 +18,7 @@ const chapters = [
     26,  // ⊤ + ⊥
     28,  // add
 ]
-const locationG = 1571;
+const locationG = 1597;
 let sectAt = 0;
 let sectNumStart = 0;
 /////
