@@ -20,7 +20,8 @@ const chapters = [
         28,  // add
     ],
     [
-        6
+        0, // i did this to myself
+        6, // min
     ],
 ];
 let chapterLengths = [1599];
