@@ -23,7 +23,7 @@ const chapters = [
         6
     ],
 ];
-let chapterLengths = [];
+let chapterLengths = [1599];
 const locationG = 1597;
 let sectAt = 0;
 let sectNumStart = 0;
@@ -57,13 +57,27 @@ const interpretPercentage = (block, percentage) => {
 }
 
 const setPercentage = (block, list) => {
+    // movement to local
     let locationSPC = locationG;
+    // start of chapter
     let amount = 1;
+    // index of chapter
     let indexSPC = 0;
+    // chapter
     let i = chapters[sectIter][indexSPC];
+    // id of html block
     const blockId = block.id;
+    // chapter of html block
     const id = parseInt(blockId.slice(blockId.indexOf("-"), blockId.length - 1));
     console.log(id);
+
+    // skip over any previous arrays we've already done
+    for (let l = 0; l < sectIter; l++) {
+        locationSPC -= chapterLengths[l];
+        amount += chapterLengths[l];
+    }
+
+    // find the chapter
     while (indexSPC < id) {
         locationSPC -= i;
         amount += i;
@@ -71,6 +85,8 @@ const setPercentage = (block, list) => {
         i = chapters[sectIter][indexSPC];
     }
     amount += chapters[sectIter][indexSPC];
+
+    // calculate the percentage of completion
     let percentage = Math.round(locationSPC / chapters[sectIter][indexSPC] * 1000) / 10;
     percentage = interpretPercentage(block, percentage);
     list.push(percentage);
