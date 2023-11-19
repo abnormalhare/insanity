@@ -17,7 +17,8 @@ const chapters = [
         17,  // xor
         26,  // ∀, =, ⊤, ⊥
         26,  // ⊤ + ⊥
-        28,  // add
+        29,  // hadd
+        15,  // cadd
     ],
     [
         0, // i did this to myself
