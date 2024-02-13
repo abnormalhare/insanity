@@ -1,0 +1,18 @@
+#submitButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 45vh 45vw;
+    border: none;
+    cursor: pointer;
+    width: 10vw;
+    opacity: 0.9;
+}
+
+#submitButton:hover {
+    opacity: 1;
+}
+
+#submitButton:active {
+    background-color: #45a049;
+}
