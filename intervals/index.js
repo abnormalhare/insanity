@@ -103,7 +103,7 @@ function startTimer() {
         time--;
         timer.textContent = time;
         if (time === 0) {
-            clearInterval(interval);
+            clearInterval(intervalTimer);
             document.getElementById('submit').click();
         }
     }, 1000);
