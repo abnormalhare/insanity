@@ -65,10 +65,10 @@ function stopTest() {
     const grid = document.querySelector('.grid');
     const timer = document.getElementById('timer');
 
-    document.getElementById('submit').remove();
+    const submit = document.getElementById('submit')
 
     let time = timer.textContent;
-    timer.remove();
+    let score = 0;
 
     for (let i = 0; i < grid.children.length; i++) {
         for (let j = 0; j < grid.children[i].children.length; j++) {
@@ -80,6 +80,7 @@ function stopTest() {
             const answer = input.value;
             if (answer === randomList[0][correct] || answer === randomList[1][correct]) {
                 input.style.backgroundColor = "green";
+                score += 1;
             } else {
                 input.style.backgroundColor = "red";
                 input.style.width = "32px";
@@ -88,12 +89,9 @@ function stopTest() {
         }
     }
 
-    const reload = document.createElement('button');
-    reload.textContent = "Try Again?";
-    reload.onclick = () => location.reload();
-    reload.classList.add("submitButton");
-    reload.style.margin = "auto";
-    document.body.appendChild(reload);
+    submit.textContent = "Try Again?";
+    submit.onclick = () => location.reload();
+    time.textContent = `Score: (${score}/50), ${time} sec. = ${score * 10 + time * 2}`;
 }
 
 // a function that displays a timer and stops the test after 3 minutes
