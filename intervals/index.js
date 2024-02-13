@@ -2,7 +2,7 @@ const randomNotesSharp = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", 
 const randomNotesFlat = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 const randomList = [randomNotesSharp, randomNotesFlat];
 const randomIntervals = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13];
-const intervalIncs = [0, 2, 4, 5, 7, 9, 11, 12, 14, 17, 20];;
+const intervalIncs = [0, 2, 4, 5, 7, 9, 11, 12, 14, 17, 21];
 
 // Create a function called "createGrid" that makes a 5x10 grid of divs each containing a random note and interval in the format "[Note] - [Interval]"
 function createGrid() {
