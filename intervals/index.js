@@ -40,4 +40,26 @@ function createGrid() {
 
 document.querySelectorAll('h1').forEach(h1 => h1.remove());
 
+function startTest() {
+    createGrid();
+    document.getElementById('start').remove();
 
+    const submit = document.getElementById('submit');
+    const timer = document.getElementById('timer');
+    submit.style.display = "block";
+    submit.style.margin = "auto";
+}
+
+// a function that displays a timer and stops the test after 3 minutes
+function startTimer() {
+    let time = 180;
+    const timer = document.getElementById('timer');
+    const interval = setInterval(() => {
+        time--;
+        timer.textContent = time;
+        if (time === 0) {
+            clearInterval(interval);
+            document.getElementById('submit').click();
+        }
+    }, 1000);
+}

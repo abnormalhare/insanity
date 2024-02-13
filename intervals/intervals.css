@@ -1,4 +1,4 @@
-#submitButton {
+.submitButton {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -9,10 +9,10 @@
     opacity: 0.9;
 }
 
-#submitButton:hover {
+.submitButton:hover {
     opacity: 1;
 }
 
-#submitButton:active {
+.submitButton:active {
     background-color: #45a049;
 }

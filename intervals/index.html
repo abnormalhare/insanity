@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8"/>
-    <title>CreateSource is kinda cool, no?</title>
+    <title>Infinite Intervals</title>
     <link rel="stylesheet" href="/gone.css">
     <link rel="stylesheet" href="intervals.css">
   </head>
@@ -12,8 +12,12 @@
     <script src="index.js"></script>
   </body>
   <footer>
-    <button onclick="startTest()" id="submitButton">
+    <button onclick="startTest()" class="submitButton" id="start">
       Start!
     </button>
+    <button onclick="stopTest()" class="submitButton" id="submit" style="display:none">
+      Submit!
+    </button>
+    <div id="timer" style="display: none;"></div>
   </footer>
 </html>
