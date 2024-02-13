@@ -83,7 +83,6 @@ function stopTest() {
             } else {
                 input.style.backgroundColor = "red";
             }
-            console.log(answer, randomList[0][correct], randomList[1][correct]);
         }
     }
 
