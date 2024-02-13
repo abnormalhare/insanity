@@ -96,7 +96,7 @@ function stopTest() {
 
 // a function that displays a timer and stops the test after 3 minutes
 function startTimer() {
-    let time = 180;
+    let time = 120;
     const timer = document.getElementById('timer');
     const interval = setInterval(() => {
         time--;
