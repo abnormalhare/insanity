@@ -68,7 +68,6 @@ function stopTest() {
     const dispScore = document.createElement('div');
 
     dispScore.style = timer.style;
-    document.body.insertBefore(dispScore, submit);
 
     let time = timer.textContent;
     let score = 0;
