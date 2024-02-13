@@ -82,7 +82,7 @@ function stopTest() {
                 input.style.backgroundColor = "green";
             } else {
                 input.style.backgroundColor = "red";
-                input.style.width = "40px";
+                input.style.width = "32px";
                 input.value = `${randomList[0][correct]}/${randomList[1][correct]}`;
             }
         }
