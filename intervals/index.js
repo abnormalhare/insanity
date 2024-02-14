@@ -1,5 +1,5 @@
 const intervalList = ["1",  "b2", "2",  "b3", "3",  "4",  "b5", "5",  "b6", "6",  "b7", "7",  "8",  "9",  "11", "13"];
-const aScale =       ["A",  "Bb", "B",  "C",  "C#", "D",  "Eb", "E",  "Fb", "F",  "G",  "G#", "A",  "B",  "D",  "F#"];
+const aScale =       ["A",  "Bb", "B",  "C",  "C#", "D",  "Eb", "E",  "F",  "F#", "G",  "G#", "A",  "B",  "D",  "F#"];
 const asScale =      ["A#", "B",  "C",  "C#", "D",  "D#", "E",  "E#", "F#", "G",  "G#", "A",  "A#", "B#", "D#", "G"];
 const bbScale =      ["Bb", "Cb", "C",  "Db", "D",  "Eb", "E",  "F",  "Gb", "G",  "Ab", "A",  "Bb", "C",  "Eb", "G" ];
 const bScale =       ["B",  "C",  "C#", "D",  "D#", "E",  "F",  "F#", "G",  "G#", "A",  "A#", "B",  "C#", "E",  "G#"];
@@ -15,7 +15,7 @@ const fsScale =      ["F#", "G",  "G#", "A",  "A#", "B",  "C",  "C#", "D",  "D#"
 const gbScale =      ["Gb", "G",  "Ab", "A",  "Bb", "Cb", "C",  "Db", "D",  "Eb", "E",  "F",  "Gb", "Ab", "Cb", "Eb"];
 const gScale =       ["G",  "Ab", "A",  "Bb", "B",  "C",  "Db", "D",  "Eb", "E",  "F",  "F#", "G",  "A",  "C",  "E" ];
 const gsScale =      ["G#", "A",  "A#", "B",  "B#", "C#", "D",  "D#", "E",  "E#", "F#", "G",  "G#", "A#", "C#", "F" ];
-const abScale =      ["Ab", "A",  "Bb", "B",  "C",  "Db", "D",  "Eb", "E",  "F",  "Gb", "G",  "Ab", "Bb", "Db", "F" ];
+const abScale =      ["Ab", "A",  "Bb", "Cb", "C",  "Db", "D",  "Eb", "E",  "F",  "Gb", "G",  "Ab", "Bb", "Db", "F" ];
 const randomScaleList = [aScale, asScale, bbScale, bScale, cScale, csScale, dbScale, dScale, dsScale, ebScale, eScale, fScale, fsScale, gbScale, gScale, gsScale, abScale];
 
 // Create a function called "createGrid" that makes a 5x10 grid of divs each containing a random note and interval in the format "[Note] - [Interval]"
