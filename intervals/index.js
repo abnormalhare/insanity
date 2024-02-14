@@ -135,8 +135,7 @@ function startTimer() {
         time--;
         timer.textContent = time;
         if (time === 0) {
-            clearInterval(interval);
-            document.getElementById('submit').click();
+            stopTest();
         }
     }, 1000);
 }
