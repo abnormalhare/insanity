@@ -37,8 +37,6 @@ let sectNumStart = 0;
 let sectIter = 0;
 /////
 
-document.getElementById("jswarn").remove();
-
 const interpretPercentage = (block, percentage) => {
     if (percentage >= 100 && block != null) {
         block.className = "greenBefore";
