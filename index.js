@@ -1,5 +1,5 @@
 function detectChromeBrowser() {
-    if (navigator.userAgent.indexOf("Chrome") != 1) {
+    if (navigator.userAgent.indexOf("Chrome") != -1) {
         return true
     } else {
         return false
