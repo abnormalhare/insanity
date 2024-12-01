@@ -1,0 +1,3 @@
+[submodule "theorem-idle"]
+	path = theorem-idle
+	url = https://github.com/abnormalhare/theorem-idle
